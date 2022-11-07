@@ -4,31 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>RecipeApp</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <ul>
-                <li>Home</li>
-                <li>Create new recipe</li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./createNewRecipe.html">Create new recipe</a></li>
             </ul>
         </nav>
     </header>
-    <fieldset>
-        <legend>Create a new Recipe</legend>
-        <form action="/createNewRecipe" method="post">
-            <label for="name"> Enter the name of the dish</label>
-            <input type="text" id="name" name="name">
-            
-            <label for="ingredients"> Enter the ingredients of the dish</label>
-            <input type="text" id="ingredients" name="ingredients">
-    
-            <label for="description"> Enter the description of the dish</label>
-            <input type="text" id="description" name="description">
-    
-            <button type="submit">Submit</button>
-        </form>
-    </fieldset>
+    <h1 class="center">Recipes</h1>
+    <div id="resultContainer" class="container row"></div>
 </body>
 </html>

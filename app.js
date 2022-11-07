@@ -15,9 +15,18 @@ app.post('/createNewRecipe',(req,res)=>{
         console.log(results);
         console.log(fields);
     })
+    res.redirect('./index.html')
     res.end()
 })
 
+app.get('/getRecipes',(req,res)=>{
+    connection.execute(
+        'SELECT * FROM recipe',(err,results,fields)=>{
+            console.log(results);
+            res.json(results);
+        }
+    )
+})
 
 
 app.listen(5000,()=>{
