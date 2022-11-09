@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
     user:'root',
     password:'root',
     database:'recipeapp',
-    port:3306
+    port:3307
 })
 
 module.exports = connection;

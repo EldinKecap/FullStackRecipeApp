@@ -1,4 +1,6 @@
 fieldset{
     text-align: center;
     border-radius: 5px;
+    font-size: large;
+    font-weight: 600;
 }
